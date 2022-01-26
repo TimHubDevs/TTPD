@@ -15,38 +15,11 @@ MonoBehaviour:
   Path: FModProject/TTPD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637786573281293981
+  lastModified: 637783864094818000
   FileSizes:
   - Name: Desktop
-    Value: 764
+    Value: 818
   Exists: 1
---- !u!114 &-2898938905704849883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Background/Background_music
-  m_EditorClassIdentifier: 
-  Path: event:/Background/Background_music
-  Guid:
-    Data1: -2105337270
-    Data2: 1151479292
-    Data3: -1150640716
-    Data4: 1975514111
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 60000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,13 +36,14 @@ MonoBehaviour:
   - {fileID: -6621411032027905070}
   - {fileID: 2460100684571932948}
   EditorEvents:
-  - {fileID: -2898938905704849883}
+  - {fileID: 6104232137616929745}
+  - {fileID: 2901665166647844872}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2460100684571932948}
   StringsBanks:
   - {fileID: -6621411032027905070}
-  cacheTime: 637786573281293981
+  cacheTime: 637783864094818000
   cacheVersion: 10
 --- !u!114 &2460100684571932948
 MonoBehaviour:
@@ -86,8 +60,62 @@ MonoBehaviour:
   Path: FModProject/TTPD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637786573281283982
+  lastModified: 637783864094788000
   FileSizes:
   - Name: Desktop
-    Value: 772864
+    Value: 3968224
   Exists: 1
+--- !u!114 &2901665166647844872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background/Background_music_dark
+  m_EditorClassIdentifier: 
+  Path: event:/Background/Background_music_dark
+  Guid:
+    Data1: -2105337270
+    Data2: 1151479292
+    Data3: -1150640716
+    Data4: 1975514111
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 60000
+--- !u!114 &6104232137616929745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background/Background_music_light
+  m_EditorClassIdentifier: 
+  Path: event:/Background/Background_music_light
+  Guid:
+    Data1: 1951125814
+    Data2: 1329633977
+    Data3: -1845336703
+    Data4: -564803314
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 120750
