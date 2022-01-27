@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{12f1ff98-4412-4287-8b61-78cb1bad4a8a}">
+		<property name="assetPath">
+			<value>Assets/footsteps/snd_character_jumpdown_metal2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0758956916099773</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{40509073-2d6e-4bcd-acdf-f744fef6caef}</destination>
+		</relationship>
+	</object>
+</objects>

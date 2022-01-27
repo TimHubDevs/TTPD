@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{3da64e40-7e44-440d-b717-6c92834ecada}">
 		<property name="name">
 			<value>Single_click</value>

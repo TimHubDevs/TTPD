@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{2d4371ef-295e-49fb-a50d-a90c83a4219b}">
 		<property name="name">
 			<value>Movement</value>
@@ -86,9 +86,9 @@
 	</object>
 	<object class="Timeline" id="{b55b6ff3-03a3-48d1-9cbb-f2371fca64a7}">
 		<relationship name="modules">
+			<destination>{c0dbd6fd-0af0-490e-9437-95ba46526232}</destination>
 			<destination>{dfc1deac-8e99-40c8-92fb-66c0d326d1da}</destination>
 			<destination>{5e9e60e4-cb7a-4b78-b9fc-4e1d99b67e26}</destination>
-			<destination>{c0dbd6fd-0af0-490e-9437-95ba46526232}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{e0f37245-50c4-4f19-bf39-c1ac22990b0a}</destination>

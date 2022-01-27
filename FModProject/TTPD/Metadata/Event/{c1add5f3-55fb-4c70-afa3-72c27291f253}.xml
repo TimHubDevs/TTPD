@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{c1add5f3-55fb-4c70-afa3-72c27291f253}">
 		<property name="name">
 			<value>Hit_electric</value>
@@ -93,8 +93,8 @@
 			<value>1.3204761904761906</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{2413ee13-8aba-4d8d-a5c9-277afe7d088e}</destination>
 			<destination>{1a13ebcc-3a1f-4ebc-bd5e-16301a1821d3}</destination>
+			<destination>{2413ee13-8aba-4d8d-a5c9-277afe7d088e}</destination>
 		</relationship>
 		<relationship name="audioFile">
 			<destination>{cbb3ed59-92e2-4e1e-a394-2f1fbc1bfad3}</destination>
@@ -124,17 +124,17 @@
 	</object>
 	<object class="MixerBusPanner" id="{4416c8cd-6429-44e8-96ac-62565b0ab4eb}" />
 	<object class="MixerBusFader" id="{3cd780d2-1399-4fdf-9ef0-5b8da8454478}" />
-	<object class="RandomizerModulator" id="{2413ee13-8aba-4d8d-a5c9-277afe7d088e}">
+	<object class="RandomizerModulator" id="{1a13ebcc-3a1f-4ebc-bd5e-16301a1821d3}">
 		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
+			<value>startOffset</value>
 		</property>
 		<property name="amount">
 			<value>4</value>
 		</property>
 	</object>
-	<object class="RandomizerModulator" id="{1a13ebcc-3a1f-4ebc-bd5e-16301a1821d3}">
+	<object class="RandomizerModulator" id="{2413ee13-8aba-4d8d-a5c9-277afe7d088e}">
 		<property name="nameOfPropertyBeingModulated">
-			<value>startOffset</value>
+			<value>pitch</value>
 		</property>
 		<property name="amount">
 			<value>4</value>

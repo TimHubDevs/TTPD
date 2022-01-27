@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    short sndgrnd = 1;
+    FMOD.Studio.EventInstance jumpdwnInstance;
+
     public float speed;
     public float jumpForce;
     bool isGrounded = false;
@@ -87,15 +90,32 @@ public class PlayerMovement : MonoBehaviour
     }
     void CheckIfGrounded()
     {
+    
+
         Collider2D collider = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
         if (collider != null)
         {
+           
             isGrounded = true;
             animator.SetBool("isJumping", false);
+
+            while (sndgrnd <= 1)
+                
+            { 
+                
+
+                jumpdwnInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/JumpDown");
+                jumpdwnInstance.start();
+                jumpdwnInstance.release();
+
+                sndgrnd++;
+            } 
+   
         }
         else
         {
             isGrounded = false;
+            sndgrnd = 1;
         }
     }
 }

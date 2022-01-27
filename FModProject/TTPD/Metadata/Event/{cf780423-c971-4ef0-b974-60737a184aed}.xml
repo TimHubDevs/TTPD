@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{cf780423-c971-4ef0-b974-60737a184aed}">
 		<property name="name">
 			<value>Footsteps</value>
@@ -82,6 +82,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d58d33b8-600a-4ea5-9eb8-c906cca1fdda}">
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{7270ee8a-07e4-4430-8170-398e999cc185}</destination>
 		</relationship>
@@ -117,7 +120,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{ae848258-ce44-4b16-9fc3-34bbd6f8779e}">
 		<property name="volume">
-			<value>1</value>
+			<value>1.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -155,7 +158,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{b8adc8d1-269d-4dbc-a51d-8945b568510d}">
 		<property name="volume">
-			<value>-2.5</value>
+			<value>-14</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
