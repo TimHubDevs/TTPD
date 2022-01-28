@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0d149129-139c-493b-b653-690aaa487a4f}">
+		<property name="assetPath">
+			<value>Assets/Mobs/snd_mobs_spring_bad_ground.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.6012925170068026</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{40509073-2d6e-4bcd-acdf-f744fef6caef}</destination>
+		</relationship>
+	</object>
+</objects>
