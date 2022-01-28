@@ -32,7 +32,7 @@ public class Parallax : MonoBehaviour
 
         if (tempX > startposX + width)
             startposX += width;
-        else if (tempY < startposX - width)
+        else if (tempX < startposX - width)
             startposX -= width;
     }
 }
