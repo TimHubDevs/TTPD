@@ -5,10 +5,10 @@
 			<value>Spring_bad_ground</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a08fb0e5-119e-4546-8321-e9764877459d}</destination>
+			<destination>{a549e09c-c0eb-423a-9301-854de824cb27}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{3a92abcf-6d75-4c9b-8a8d-5f82f28c2893}</destination>
@@ -56,7 +56,11 @@
 			<destination>{9350a8f8-9097-408a-899c-2379d615b0c2}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{86e3680c-f826-4755-a929-8c1d9bd93ec7}" />
+	<object class="EventAutomatableProperties" id="{86e3680c-f826-4755-a929-8c1d9bd93ec7}">
+		<property name="maximumDistance">
+			<value>14</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{4b5db580-81b9-4481-8b3d-07b2d3507a71}" />
 	<object class="GroupTrack" id="{058624bf-7f68-447e-a3b4-463cac0e2ab8}">
 		<relationship name="modules">
@@ -116,6 +120,7 @@
 	<object class="MixerBusEffectChain" id="{0d4c8cf9-36a3-442d-9cda-e8d73d1ef7d2}">
 		<relationship name="effects">
 			<destination>{067395b6-04ec-4c53-9d28-8de938fdf0cc}</destination>
+			<destination>{956e2f0b-df8f-4cfb-a9bf-57914e7aea5c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b2c43960-0e68-47d3-90c6-6c5b9e458be4}" />
@@ -135,5 +140,19 @@
 	</object>
 	<object class="MixerBusPanner" id="{b778b09b-d971-4760-aa87-14869022f0bd}" />
 	<object class="MixerBusFader" id="{067395b6-04ec-4c53-9d28-8de938fdf0cc}" />
+	<object class="SpatialiserEffect" id="{956e2f0b-df8f-4cfb-a9bf-57914e7aea5c}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+		<property name="maximumDistance">
+			<value>14</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>38</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a7187641-4e09-463a-a49c-3749b4c681dc}" />
 </objects>

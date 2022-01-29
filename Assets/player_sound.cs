@@ -5,26 +5,23 @@ using UnityEngine;
 
 public class player_sound : MonoBehaviour
 {
-    
-    
+
+
     FMOD.Studio.EventInstance fsInstance;
     FMOD.Studio.EventInstance jumpInstance;
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
+  
     void Update()
     {
         
     }
 
-    void Footsteps()
+    void snd_footsteps() 
+        // Звуки шагов
     {
 
         fsInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Footsteps");
@@ -34,6 +31,7 @@ public class player_sound : MonoBehaviour
     }
 
     void snd_jump()
+        // Прыжок
     {
 
         jumpInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/JumpUp");
@@ -43,6 +41,7 @@ public class player_sound : MonoBehaviour
     }
 
     void snd_jumpdwn()
+     // Приземление
     {
         
         FMOD.Studio.EventInstance jumpdwnInstance;
@@ -50,6 +49,54 @@ public class player_sound : MonoBehaviour
         jumpdwnInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/JumpDown");
         jumpdwnInstance.start();
         jumpdwnInstance.release();
+
+    }
+
+    void snd_punch()
+    // Замах
+    {
+
+        FMOD.Studio.EventInstance punchInstance;
+
+        punchInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Punch");
+        punchInstance.start();
+        punchInstance.release();
+
+    }
+
+    void snd_damage_taken()
+    // Получаемый урон
+    {
+
+        FMOD.Studio.EventInstance damageInstance;
+
+        damageInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Damage");
+        damageInstance.start();
+        damageInstance.release();
+
+    }
+
+    void snd_character_die()
+    // Смерть главного персонажа
+    {
+
+        FMOD.Studio.EventInstance character_dieInstance;
+
+        character_dieInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Die");
+        character_dieInstance.start();
+        character_dieInstance.release();
+
+    }
+
+    void snd_electric_bolt()
+    // запуск электрического снаряда
+    {
+
+        FMOD.Studio.EventInstance ebInstance;
+
+        ebInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Electric_bolt");
+        ebInstance.start();
+        ebInstance.release();
 
     }
 }
