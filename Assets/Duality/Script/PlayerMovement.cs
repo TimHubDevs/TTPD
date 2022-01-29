@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     public GameObject head;
+    public GameObject body;
     public GameObject player;
     public bool isHiding=false;
     public bool isReversedGrav;
@@ -75,12 +76,18 @@ public class PlayerMovement : MonoBehaviour
         else
             animator.SetBool("isMoving", false);
         if (x < 0)
+        {
             head.GetComponent<SpriteRenderer>().flipX = false;
-        else if(x>0)
+            body.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (x > 0)
+        {
             head.GetComponent<SpriteRenderer>().flipX = true;
+            body.GetComponent<SpriteRenderer>().flipX = false;
+        }
         float moveBy = x * speed;
         if(!isHiding)
-        rb.velocity = new Vector2(moveBy, rb.velocity.y);
+            rb.velocity = new Vector2(moveBy, rb.velocity.y);
         else
             rb.velocity = Vector2.zero;
 
@@ -93,11 +100,20 @@ public class PlayerMovement : MonoBehaviour
             isHiding = true;
             rb.velocity = Vector2.zero;
         }
-        else if (Input.GetKeyDown(KeyCode.H) && isHiding)
+        else if (Input.GetKeyDown(KeyCode.S) && isHiding)
         {
             animator.SetBool("isHiding",false);
-            isHiding = false;
+            StartCoroutine(SetHidingFalse());
         }
+    }
+    IEnumerator SetHidingFalse()
+    {
+        do
+        {
+            yield return null;
+        } while (animator.GetCurrentAnimatorStateInfo(0).IsName("UnHide")|| animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"));
+       
+        isHiding = false;
     }
     void Jump()
     {
@@ -112,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.y < 0)
         {
             rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
-            
+            animator.SetBool("isFalling", true);
         }
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
@@ -133,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.y > 0)
         {
             rb.velocity += Vector2.up * -Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
+            animator.SetBool("isFalling", true);
         }
         else if (rb.velocity.y < 0 && !Input.GetKey(KeyCode.Space))
         {
@@ -147,10 +164,9 @@ public class PlayerMovement : MonoBehaviour
         Collider2D collider = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
         if (collider != null)
         {
-           
             isGrounded = true;
             animator.SetBool("isJumping", false);
-
+            animator.SetBool("isFalling", false);
             while (sndgrnd <= 1)
                 
             { 

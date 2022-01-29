@@ -5,10 +5,10 @@
 			<value>Spring_good</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a08fb0e5-119e-4546-8321-e9764877459d}</destination>
+			<destination>{a549e09c-c0eb-423a-9301-854de824cb27}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{5dbc8077-96b6-4e36-8dc0-9f62caca4024}</destination>
@@ -56,7 +56,11 @@
 			<destination>{9350a8f8-9097-408a-899c-2379d615b0c2}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{e151e64d-a190-4775-b749-8e915a04cba2}" />
+	<object class="EventAutomatableProperties" id="{e151e64d-a190-4775-b749-8e915a04cba2}">
+		<property name="maximumDistance">
+			<value>14</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{15f78e6b-4ea3-4057-a9c4-f0092ab7fd6a}" />
 	<object class="GroupTrack" id="{c8d406f8-02b5-4b1b-945c-b76d036bfc49}">
 		<relationship name="modules">
@@ -113,6 +117,7 @@
 	<object class="MixerBusEffectChain" id="{43700bd5-686c-411b-b307-03490e9ef567}">
 		<relationship name="effects">
 			<destination>{76f07feb-1482-47cd-8941-f56f6ce7b97b}</destination>
+			<destination>{08876d91-8190-46ea-9df7-b3d7b7e1e106}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7de6c99d-b706-4d8f-8fbb-8d2863d0615f}" />
@@ -124,5 +129,19 @@
 	</object>
 	<object class="MixerBusPanner" id="{f53d4781-baa1-44b1-aff1-ddbad32f879e}" />
 	<object class="MixerBusFader" id="{76f07feb-1482-47cd-8941-f56f6ce7b97b}" />
+	<object class="SpatialiserEffect" id="{08876d91-8190-46ea-9df7-b3d7b7e1e106}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+		<property name="maximumDistance">
+			<value>14</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>38</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{9502e438-72ee-4980-8d0a-b133d5f5399f}" />
 </objects>

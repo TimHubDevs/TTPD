@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2897534843449448656}
   - component: {fileID: 7646927233484568580}
   - component: {fileID: 1633613588950636717}
-  m_Layer: 8
+  m_Layer: 22
   m_Name: platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,6 +47,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

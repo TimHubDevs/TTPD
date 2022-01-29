@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fed04ff0ce25f341b588fd0370d1af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexsesToDrop: 010000000400000004000000
+  indexsesToDrop: 
   isRandom: 1
 --- !u!1 &6974779257803056648
 GameObject:
