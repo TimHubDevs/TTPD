@@ -13,7 +13,7 @@ public class PlatformSpawner : MonoBehaviour
     }
     public void SpawnPlatforms()
     {
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 200; i++)
         {
             int[] toDelete = new int[Random.Range(2,7)];
             for (int t = 0; t< toDelete.Length; t++)
