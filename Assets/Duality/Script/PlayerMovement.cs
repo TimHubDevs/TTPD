@@ -18,23 +18,55 @@ public class PlayerMovement : MonoBehaviour
     public float lowJumpMultiplier = 2f;
 
     Rigidbody2D rb;
-    Animator animator;
+    public Animator animator;
 
     public GameObject head;
+    public GameObject body;
+    public GameObject player;
     public bool isHiding=false;
+    public bool isReversedGrav;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        isReversedGrav = false;
     }
     void Update()
     {
         
+
         Move();
-        Jump();
-        BetterJump();
+        if (!isReversedGrav)
+        {
+            Jump();
+            BetterJump();
+        }
+        else
+        {
+            JumpG();
+            BetterJumpG();
+        }
         CheckIfGrounded();
         Hide();
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            ChangeGravity();
+        }
+    }
+    public void ChangeGravity()
+    {
+        if (isReversedGrav)
+        {
+            isReversedGrav = false;
+            GetComponent<Rigidbody2D>().gravityScale *= -1;
+            player.transform.Rotate(new Vector3(0, 180, 180));
+        }
+        else
+        {
+            isReversedGrav = true;
+            GetComponent<Rigidbody2D>().gravityScale *= -1;
+            player.transform.Rotate(new Vector3(0, 180, 180));
+        }
+
     }
     void Move()
     {
@@ -44,29 +76,44 @@ public class PlayerMovement : MonoBehaviour
         else
             animator.SetBool("isMoving", false);
         if (x < 0)
+        {
             head.GetComponent<SpriteRenderer>().flipX = false;
-        else if(x>0)
+            body.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (x > 0)
+        {
             head.GetComponent<SpriteRenderer>().flipX = true;
+            body.GetComponent<SpriteRenderer>().flipX = false;
+        }
         float moveBy = x * speed;
         if(!isHiding)
-        rb.velocity = new Vector2(moveBy, rb.velocity.y);
+            rb.velocity = new Vector2(moveBy, rb.velocity.y);
         else
             rb.velocity = Vector2.zero;
 
     }
     void Hide()
     {
-        if (Input.GetKeyDown(KeyCode.H) && !isHiding&& isGrounded)
+        if (Input.GetKeyDown(KeyCode.S) && !isHiding&& isGrounded)
         {
             animator.SetBool("isHiding", true);
             isHiding = true;
             rb.velocity = Vector2.zero;
         }
-        else if (Input.GetKeyDown(KeyCode.H) && isHiding)
+        else if (Input.GetKeyDown(KeyCode.S) && isHiding)
         {
             animator.SetBool("isHiding",false);
-            isHiding = false;
+            StartCoroutine(SetHidingFalse());
         }
+    }
+    IEnumerator SetHidingFalse()
+    {
+        do
+        {
+            yield return null;
+        } while (animator.GetCurrentAnimatorStateInfo(0).IsName("UnHide")|| animator.GetCurrentAnimatorStateInfo(0).IsName("Hide"));
+       
+        isHiding = false;
     }
     void Jump()
     {
@@ -81,13 +128,35 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.y < 0)
         {
             rb.velocity += Vector2.up * Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
-            
+            animator.SetBool("isFalling", true);
         }
         else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
             rb.velocity += Vector2.up * Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
+
+    void JumpG()
+    {
+        if (Input.GetKey(KeyCode.Space) && isGrounded && !isHiding)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, -jumpForce);
+            animator.SetBool("isJumping", true);
+        }
+    }
+    void BetterJumpG()
+    {
+        if (rb.velocity.y > 0)
+        {
+            rb.velocity += Vector2.up * -Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;
+            animator.SetBool("isFalling", true);
+        }
+        else if (rb.velocity.y < 0 && !Input.GetKey(KeyCode.Space))
+        {
+            rb.velocity += Vector2.up * -Physics2D.gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
     void CheckIfGrounded()
     {
     
@@ -95,10 +164,9 @@ public class PlayerMovement : MonoBehaviour
         Collider2D collider = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
         if (collider != null)
         {
-           
             isGrounded = true;
             animator.SetBool("isJumping", false);
-
+            animator.SetBool("isFalling", false);
             while (sndgrnd <= 1)
                 
             { 
