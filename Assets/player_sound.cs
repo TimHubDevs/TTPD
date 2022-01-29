@@ -76,6 +76,31 @@ public class player_sound : MonoBehaviour
 
     }
 
+
+    void snd_hide()
+    // приседание, укрылись =)
+    {
+
+        FMOD.Studio.EventInstance hideInstance;
+
+        hideInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Helmet_drop");
+        hideInstance.start();
+        hideInstance.release();
+
+    }
+
+    void snd_unhide()
+    // встали
+    // =)
+    {
+
+        FMOD.Studio.EventInstance unhideInstance;
+
+        unhideInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/unhide");
+        unhideInstance.start();
+        unhideInstance.release();
+
+    }
     void snd_character_die()
     // Смерть главного персонажа
     {
