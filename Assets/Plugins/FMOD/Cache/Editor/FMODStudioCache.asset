@@ -27,6 +27,114 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3345
+--- !u!114 &-8984845598957034408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Explosive/Explosive_bad
+  m_EditorClassIdentifier: 
+  Path: event:/Explosive/Explosive_bad
+  Guid:
+    Data1: 1056446243
+    Data2: 1258600420
+    Data3: -398024001
+    Data4: -616010645
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3131
+--- !u!114 &-8600612306001425829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boar/Boar_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Boar/Boar_footsteps
+  Guid:
+    Data1: -486298294
+    Data2: 1115838941
+    Data3: -343781201
+    Data4: -1577543951
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 273
+--- !u!114 &-8181181125000666434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Explosive/Explosive_good
+  m_EditorClassIdentifier: 
+  Path: event:/Explosive/Explosive_good
+  Guid:
+    Data1: -322595566
+    Data2: 1246728932
+    Data3: -1137127278
+    Data4: -858207236
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4086
+--- !u!114 &-7971715639337735268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Explosive/Explosive_idle
+  m_EditorClassIdentifier: 
+  Path: event:/Explosive/Explosive_idle
+  Guid:
+    Data1: 1364074962
+    Data2: 1090941051
+    Data3: 1204475785
+    Data4: 1259029423
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1.2
+  MaxDistance: 14
+  Length: 12977
 --- !u!114 &-7829804070035060836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +161,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 838
+  Length: 1075
 --- !u!114 &-7759201344294128694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,10 +204,10 @@ MonoBehaviour:
   Path: FModProject/TTPD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637789142344979000
+  lastModified: 637790888931208000
   FileSizes:
   - Name: Desktop
-    Value: 1836
+    Value: 2006
   Exists: 1
 --- !u!114 &-3235429860289568336
 MonoBehaviour:
@@ -128,60 +236,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1754
---- !u!114 &-2675011220645825394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Trap_good
-  m_EditorClassIdentifier: 
-  Path: event:/Mobs/Trap_good
-  Guid:
-    Data1: -2113407703
-    Data2: 1200745457
-    Data3: 91529651
-    Data4: -319798100
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3435
---- !u!114 &-2255170476525588273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Boar_bad
-  m_EditorClassIdentifier: 
-  Path: event:/Mobs/Boar_bad
-  Guid:
-    Data1: 703617373
-    Data2: 1330917158
-    Data3: 1186466744
-    Data4: 1155853614
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2990
 --- !u!114 &-2067559683067651413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,60 +263,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 87529
---- !u!114 &-1540863240914671540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Boar_good
-  m_EditorClassIdentifier: 
-  Path: event:/Mobs/Boar_good
-  Guid:
-    Data1: -1218848024
-    Data2: 1279461780
-    Data3: -2140994131
-    Data4: -33412358
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3345
---- !u!114 &-1493510556240406644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Trap_bad
-  m_EditorClassIdentifier: 
-  Path: event:/Mobs/Trap_bad
-  Guid:
-    Data1: -320654185
-    Data2: 1261323179
-    Data3: 1834138004
-    Data4: -1893622069
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2646
 --- !u!114 &-1473997048487784452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +290,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 349
+--- !u!114 &-651345685086166124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Trap/Trap_good
+  m_EditorClassIdentifier: 
+  Path: event:/Trap/Trap_good
+  Guid:
+    Data1: -2113407703
+    Data2: 1200745457
+    Data3: 91529651
+    Data4: -319798100
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3435
 --- !u!114 &-437050065968463199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,22 +373,26 @@ MonoBehaviour:
   - {fileID: -7759201344294128694}
   - {fileID: -437050065968463199}
   - {fileID: 5352902570768345137}
-  - {fileID: 7583093987146772265}
-  - {fileID: 8529317079518266675}
-  - {fileID: -2675011220645825394}
   - {fileID: 5037292816954130997}
-  - {fileID: 6625783021379941672}
   - {fileID: -9030286944124136497}
-  - {fileID: -2255170476525588273}
-  - {fileID: -1493510556240406644}
   - {fileID: 6545532491027766037}
-  - {fileID: -1540863240914671540}
+  - {fileID: -8181181125000666434}
+  - {fileID: -8984845598957034408}
+  - {fileID: -8600612306001425829}
+  - {fileID: 5086192820235766180}
+  - {fileID: 7271799303772919562}
+  - {fileID: -7971715639337735268}
+  - {fileID: 3853355253339904234}
+  - {fileID: 5598542115272119982}
+  - {fileID: 3730047883548841712}
+  - {fileID: -651345685086166124}
+  - {fileID: 3983445164082328484}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2460100684571932948}
   StringsBanks:
   - {fileID: -6621411032027905070}
-  cacheTime: 637789142344979000
+  cacheTime: 637790888931208000
   cacheVersion: 10
 --- !u!114 &2164663154228973277
 MonoBehaviour:
@@ -405,10 +436,10 @@ MonoBehaviour:
   Path: FModProject/TTPD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637789142344929000
+  lastModified: 637790888931148000
   FileSizes:
   - Name: Desktop
-    Value: 10034528
+    Value: 10506464
   Exists: 1
 --- !u!114 &3365267888900011004
 MonoBehaviour:
@@ -437,6 +468,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1075
+--- !u!114 &3730047883548841712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boar/Boar_good
+  m_EditorClassIdentifier: 
+  Path: event:/Boar/Boar_good
+  Guid:
+    Data1: -1218848024
+    Data2: 1279461780
+    Data3: -2140994131
+    Data4: -33412358
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3345
+--- !u!114 &3853355253339904234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Damage
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Damage
+  Guid:
+    Data1: 1832028889
+    Data2: 1204954098
+    Data3: -1150509691
+    Data4: -759759774
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1712
+--- !u!114 &3983445164082328484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Trap/Trap_bad
+  m_EditorClassIdentifier: 
+  Path: event:/Trap/Trap_bad
+  Guid:
+    Data1: -320654185
+    Data2: 1261323179
+    Data3: 1834138004
+    Data4: -1893622069
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2646
 --- !u!114 &4300723374166713019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,6 +630,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2601
+--- !u!114 &5086192820235766180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boar/Boar_bad
+  m_EditorClassIdentifier: 
+  Path: event:/Boar/Boar_bad
+  Guid:
+    Data1: 703617373
+    Data2: 1330917158
+    Data3: 1186466744
+    Data4: 1155853614
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3320
 --- !u!114 &5352902570768345137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +684,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3345
+--- !u!114 &5598542115272119982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Explosive/Explosive_die
+  m_EditorClassIdentifier: 
+  Path: event:/Explosive/Explosive_die
+  Guid:
+    Data1: -1219969564
+    Data2: 1297939228
+    Data3: 1491184559
+    Data4: 1529173315
+  Banks:
+  - {fileID: 2460100684571932948}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2001
 --- !u!114 &6187495625505333062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,7 +765,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 260
---- !u!114 &6625783021379941672
+--- !u!114 &7271799303772919562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -609,14 +775,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Boar_footsteps
+  m_Name: event:/Character/Die
   m_EditorClassIdentifier: 
-  Path: event:/Mobs/Boar_footsteps
+  Path: event:/Character/Die
   Guid:
-    Data1: -486298294
-    Data2: 1115838941
-    Data3: -343781201
-    Data4: -1577543951
+    Data1: -179964519
+    Data2: 1189432289
+    Data3: -2052657778
+    Data4: 8447852
   Banks:
   - {fileID: 2460100684571932948}
   IsStream: 0
@@ -625,34 +791,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 273
---- !u!114 &7583093987146772265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Explosive_good
-  m_EditorClassIdentifier: 
-  Path: event:/Mobs/Explosive_good
-  Guid:
-    Data1: -322595566
-    Data2: 1246728932
-    Data3: -1137127278
-    Data4: -858207236
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4086
+  Length: 3721
 --- !u!114 &8391050497300798142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,30 +819,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4767
---- !u!114 &8529317079518266675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mobs/Explosive_bad
-  m_EditorClassIdentifier: 
-  Path: event:/Mobs/Explosive_bad
-  Guid:
-    Data1: 1056446243
-    Data2: 1258600420
-    Data3: -398024001
-    Data4: -616010645
-  Banks:
-  - {fileID: 2460100684571932948}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3101
