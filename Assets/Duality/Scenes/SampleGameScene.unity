@@ -253,11 +253,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -2105337270
-      Data2: 1151479292
-      Data3: -1150640716
-      Data4: 1975514111
-    Path: event:/Background/Background_music
+      Data1: 1951125814
+      Data2: 1329633977
+      Data3: -1845336703
+      Data4: -564803314
+    Path: event:/Background/Background_music_light
   Event: 
   PlayEvent: 1
   StopEvent: 0
