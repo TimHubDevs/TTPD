@@ -40,15 +40,27 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2681790571
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Platform
+    uniqueID: 119009771
+    locked: 0
   - name: Player
     uniqueID: 418201817
+    locked: 0
+  - name: Enemy
+    uniqueID: 443766567
     locked: 0
   - name: Palka
     uniqueID: 2495784707
     locked: 0
   - name: Projectile
     uniqueID: 339562561
+    locked: 0
+  - name: Foreground
+    uniqueID: 3951728325
     locked: 0
