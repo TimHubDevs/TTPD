@@ -83,14 +83,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && _isGrounded && !_isHiding)
         {
             _isAttack = true;
-            // _rigidbody2D.velocity = Vector2.zero;
             _playerAttack.AttackFar();
         }
 
         if (Input.GetMouseButtonDown(0) && _isGrounded && !_isHiding)
         {
             _isAttack = true;
-            // _rigidbody2D.velocity = Vector2.zero;
             _playerAttack.AttackСLose();
         }
     }
@@ -127,7 +125,8 @@ public class PlayerController : MonoBehaviour
         }
 
         float moveBy = x * _speed;
-        _rigidbody2D.velocity = (!_isHiding && !_isAttack) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
+        _rigidbody2D.velocity =
+            (!_isHiding && !_isAttack) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
     }
 
     private void Hide()
