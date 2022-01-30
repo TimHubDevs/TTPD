@@ -328,6 +328,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &940956222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6474260054294503058, guid: dc4f6eb800b0bc245928c04ab59db8e0, type: 3}
+  m_PrefabInstance: {fileID: 3288796383391088970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &940956224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940956222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 703617373
+      Data2: 1330917158
+      Data3: 1186466744
+      Data4: 1155853614
+    Path: event:/Mobs/Boar/Boar_bad
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 14
+--- !u!114 &940956227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940956222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988c7a940376324887e379b9d44a63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1857758343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5063036228667329624, guid: 9222733bd107345438defa9469db0fd4, type: 3}
+  m_PrefabInstance: {fileID: 437326844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857758348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857758343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988c7a940376324887e379b9d44a63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1867712414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5063036227054363971, guid: 9222733bd107345438defa9469db0fd4, type: 3}
+  m_PrefabInstance: {fileID: 437326844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1867712419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867712414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988c7a940376324887e379b9d44a63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877391874
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +483,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1903996642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8350695190221788245, guid: dc4f6eb800b0bc245928c04ab59db8e0, type: 3}
+  m_PrefabInstance: {fileID: 3288796383391088970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1903996644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903996642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 703617373
+      Data2: 1330917158
+      Data3: 1186466744
+      Data4: 1155853614
+    Path: event:/Mobs/Boar/Boar_bad
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 14
+--- !u!114 &1903996647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903996642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988c7a940376324887e379b9d44a63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &2003651800
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -578,6 +706,14 @@ PrefabInstance:
     - target: {fileID: 4775173875421036585, guid: dc4f6eb800b0bc245928c04ab59db8e0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6474260054294503058, guid: dc4f6eb800b0bc245928c04ab59db8e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350695190221788245, guid: dc4f6eb800b0bc245928c04ab59db8e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc4f6eb800b0bc245928c04ab59db8e0, type: 3}
