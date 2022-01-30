@@ -12,8 +12,8 @@ public class Parallax : MonoBehaviour
     {
         startposY = transform.position.y;
         startposX = transform.position.x;
-        height = GetComponent<SpriteRenderer>().bounds.size.y;
-        width = GetComponent<SpriteRenderer>().bounds.size.x;
+        height = GetComponentInChildren<SpriteRenderer>().bounds.size.y;
+        width = GetComponentInChildren<SpriteRenderer>().bounds.size.x;
     }
     private void FixedUpdate()
     {
