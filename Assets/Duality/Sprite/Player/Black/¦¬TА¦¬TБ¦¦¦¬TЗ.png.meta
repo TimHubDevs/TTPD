@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 7a4f6f131b77a5b48ad7c753afca6043
+guid: 1472cc3be8705b848b0e1dc09ce8d9ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 339837334958389742
-    second: Lovushka_Light_0
+      213: 7876108304747618998
+    second: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_0"
   - first:
-      213: -4269233653195602746
-    second: Lovushka_Light_1
+      213: 677664315527416407
+    second: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_1"
   - first:
-      213: 3163494529686189323
-    second: Lovushka_Light_2
+      213: 6756271835212739095
+    second: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_2"
   - first:
-      213: 6944486994083312792
-    second: Lovushka_Light_3
+      213: 3332034624548724352
+    second: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_3"
   - first:
-      213: 6759028731986523506
-    second: Lovushka_Light_4
+      213: 4096313478227895758
+    second: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_4"
   - first:
-      213: 8966894309318875078
-    second: Lovushka_Light_5
+      213: 1639550544743589313
+    second: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_5"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +106,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -121,127 +121,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lovushka_Light_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee93c9f614857b400800000000000000
-      internalID: 339837334958389742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lovushka_Light_1
+      name: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_0"
       rect:
         serializedVersion: 2
         x: 500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c4022e9c92a0c4c0800000000000000
-      internalID: -4269233653195602746
+      spriteID: 6b26cf416ce8d4d60800000000000000
+      internalID: 7876108304747618998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lovushka_Light_2
+      name: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_1"
       rect:
         serializedVersion: 2
         x: 1000
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0536da838df6eb20800000000000000
-      internalID: 3163494529686189323
+      spriteID: 75a48f3ca1c876900800000000000000
+      internalID: 677664315527416407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lovushka_Light_3
+      name: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_2"
       rect:
         serializedVersion: 2
         x: 1500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 894f7ada026cf5060800000000000000
-      internalID: 6944486994083312792
+      spriteID: 712f4d7107913cd50800000000000000
+      internalID: 6756271835212739095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lovushka_Light_4
+      name: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_3"
       rect:
         serializedVersion: 2
         x: 2000
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27537b422d4eccd50800000000000000
-      internalID: 6759028731986523506
+      spriteID: 08e578f46d3cd3e20800000000000000
+      internalID: 3332034624548724352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lovushka_Light_5
+      name: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_4"
       rect:
         serializedVersion: 2
         x: 2500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c75c6d9ddec07c70800000000000000
-      internalID: 8966894309318875078
+      spriteID: ec52b6eb76709d830800000000000000
+      internalID: 4096313478227895758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\xA6\xACT\u0410\xA6\xACT\u0411\xA6\xA6\xA6\xACT\u0417_5"
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c56db2a88ad0c610800000000000000
+      internalID: 1639550544743589313
       vertices: []
       indices: 
       edges: []

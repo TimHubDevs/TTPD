@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 7a4f6f131b77a5b48ad7c753afca6043
+guid: f86cc09ff792f8e4b8697915ff269a97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 339837334958389742
-    second: Lovushka_Light_0
+      213: -8475345592384780525
+    second: "T\u0412\xA6\xA6\xA6\xAC\xA6-0T\u04170_2_0"
   - first:
-      213: -4269233653195602746
-    second: Lovushka_Light_1
-  - first:
-      213: 3163494529686189323
-    second: Lovushka_Light_2
-  - first:
-      213: 6944486994083312792
-    second: Lovushka_Light_3
-  - first:
-      213: 6759028731986523506
-    second: Lovushka_Light_4
-  - first:
-      213: 8966894309318875078
-    second: Lovushka_Light_5
+      213: 3899438406459188073
+    second: "T\u0412\xA6\xA6\xA6\xAC\xA6-0T\u04170_2_1"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -121,127 +109,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lovushka_Light_0
+      name: "T\u0412\xA6\xA6\xA6\xAC\xA6-0T\u04170_2_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee93c9f614857b400800000000000000
-      internalID: 339837334958389742
+      spriteID: 3178b398616816a80800000000000000
+      internalID: -8475345592384780525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lovushka_Light_1
+      name: "T\u0412\xA6\xA6\xA6\xAC\xA6-0T\u04170_2_1"
       rect:
         serializedVersion: 2
         x: 500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c4022e9c92a0c4c0800000000000000
-      internalID: -4269233653195602746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lovushka_Light_2
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0536da838df6eb20800000000000000
-      internalID: 3163494529686189323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lovushka_Light_3
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 894f7ada026cf5060800000000000000
-      internalID: 6944486994083312792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lovushka_Light_4
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27537b422d4eccd50800000000000000
-      internalID: 6759028731986523506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lovushka_Light_5
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 0
-        width: 500
-        height: 500
-      alignment: 9
-      pivot: {x: 0.5, y: 0.45}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c75c6d9ddec07c70800000000000000
-      internalID: 8966894309318875078
+      spriteID: 963e38012969d1630800000000000000
+      internalID: 3899438406459188073
       vertices: []
       indices: 
       edges: []

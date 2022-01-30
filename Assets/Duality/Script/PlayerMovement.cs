@@ -25,10 +25,15 @@ public class PlayerMovement : MonoBehaviour
     public GameObject player;
     public bool isHiding=false;
     public bool isReversedGrav;
+    public bool isBlack=false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isReversedGrav = false;
+        if (isBlack)
+        {
+            ChangeGravity();
+        }
     }
     void Update()
     {
@@ -47,10 +52,6 @@ public class PlayerMovement : MonoBehaviour
         }
         CheckIfGrounded();
         Hide();
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            ChangeGravity();
-        }
     }
     public void ChangeGravity()
     {
