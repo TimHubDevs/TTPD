@@ -33,10 +33,12 @@ public class PlayerAnimation : MonoBehaviour
     {
         _animator.SetTrigger("AttackFar");
     }
+
     public void Pain()
     {
         _animator.SetTrigger("Pain");
     }
+
     public void Death()
     {
         _animator.SetTrigger("Death");

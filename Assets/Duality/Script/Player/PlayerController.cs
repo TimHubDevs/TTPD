@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerAttack _playerAttack;
+    [SerializeField] private Health _playerHealth;
     [SerializeField] private PlayerAnimation _playerAnimation;
     [SerializeField] private Transform _isGroundedChecker;
     [SerializeField] private LayerMask _groundLayer;
@@ -27,6 +28,12 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         _isReversedGrav = false;
+    }
+
+
+    private void OnEnable()
+    {
+        _playerHealth.painEvent += Pain;
     }
 
     private void Update()
@@ -55,6 +62,20 @@ public class PlayerController : MonoBehaviour
 #endif
 
         Attack();
+        HealthChecker();
+    }
+
+    private void Pain()
+    {
+        _playerAnimation.Pain();
+    }
+
+    private void HealthChecker()
+    {
+        if (_playerHealth._currentHealth == 0)
+        {
+            _playerAnimation.Death();
+        }
     }
 
     private void Attack()
