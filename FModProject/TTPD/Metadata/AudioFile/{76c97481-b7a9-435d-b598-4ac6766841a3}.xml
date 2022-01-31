@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{76c97481-b7a9-435d-b598-4ac6766841a3}">
+		<property name="assetPath">
+			<value>Assets/Mobs/snd_mobs_explosive_bad_die.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.001609977324263</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{40509073-2d6e-4bcd-acdf-f744fef6caef}</destination>
+		</relationship>
+	</object>
+</objects>

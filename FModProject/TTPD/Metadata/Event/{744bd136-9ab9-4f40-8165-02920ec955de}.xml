@@ -229,7 +229,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{8f9823d4-762b-4222-85d9-7d5afce85e58}">
 		<property name="volume">
-			<value>-14.5</value>
+			<value>-13</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{95429d4e-53dd-4a54-95bf-0a7b42177937}</destination>
@@ -982,6 +982,9 @@
 		<relationship name="destination">
 			<destination>{8044d4c3-7b79-4cb6-a7d8-fe906b7d1c46}</destination>
 		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{c3dbf0e8-cf83-4d7e-a7e9-b83b814a0261}</destination>
+		</relationship>
 	</object>
 	<object class="TransitionMarker" id="{be1769a3-c522-4b40-b186-1d20a0bccf89}">
 		<property name="position">
@@ -1322,6 +1325,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{80e13bca-2cf0-41d2-8fd2-f0b68d84c206}" />
+	<object class="ParameterCondition" id="{c3dbf0e8-cf83-4d7e-a7e9-b83b814a0261}">
+		<property name="minimum">
+			<value>0</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{4cf98f46-e984-4f8b-9ca7-bf701926092e}</destination>
+		</relationship>
+	</object>
 	<object class="TransitionTimeline" id="{77efd02f-bafc-4f65-ad87-03087eb0b67f}">
 		<property name="length">
 			<value>12</value>
@@ -1379,7 +1393,7 @@
 	<object class="MixerBusFader" id="{99b7e864-6661-46f6-9f9c-e3612e12abfb}" />
 	<object class="LowpassEffect" id="{6aa52035-954a-46df-ab7a-b1279e95e0d1}">
 		<property name="cutoff">
-			<value>7000</value>
+			<value>8000</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{163e0303-7873-40b6-9e13-b6fb9ee7b64e}" />

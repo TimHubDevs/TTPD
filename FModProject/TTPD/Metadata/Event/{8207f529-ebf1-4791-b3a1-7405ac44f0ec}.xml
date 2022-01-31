@@ -5,10 +5,10 @@
 			<value>Trap_good</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a08fb0e5-119e-4546-8321-e9764877459d}</destination>
+			<destination>{fced7e12-754c-473f-8f05-fc84131ab475}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{7e45f506-1668-475e-ab1a-a30d0e9b250f}</destination>
@@ -56,7 +56,11 @@
 			<destination>{9350a8f8-9097-408a-899c-2379d615b0c2}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{681d83eb-25d7-4f7f-b913-dc5471218be4}" />
+	<object class="EventAutomatableProperties" id="{681d83eb-25d7-4f7f-b913-dc5471218be4}">
+		<property name="maximumDistance">
+			<value>14</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{10d34d9a-30cc-41d9-a549-b4656db7a324}" />
 	<object class="GroupTrack" id="{474e2d3c-1ce7-40e1-b54e-74747e0a4e97}">
 		<relationship name="modules">
@@ -113,6 +117,7 @@
 	<object class="MixerBusEffectChain" id="{d045d36f-1d1b-43b5-bfa3-a09dbd0dd877}">
 		<relationship name="effects">
 			<destination>{125523dc-e865-493b-b419-4a48a7278951}</destination>
+			<destination>{26c26d78-02e2-40a0-9ae7-97064fe0a94c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e95b850b-c444-4f3e-8e32-bcbabd3abc42}" />
@@ -124,5 +129,19 @@
 	</object>
 	<object class="MixerBusPanner" id="{6e6d6438-a8d3-4dcf-ad85-8b32e7b7b20e}" />
 	<object class="MixerBusFader" id="{125523dc-e865-493b-b419-4a48a7278951}" />
+	<object class="SpatialiserEffect" id="{26c26d78-02e2-40a0-9ae7-97064fe0a94c}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+		<property name="maximumDistance">
+			<value>14</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>38</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{a31a4f1a-9314-4095-a801-e50caf325fdc}" />
 </objects>

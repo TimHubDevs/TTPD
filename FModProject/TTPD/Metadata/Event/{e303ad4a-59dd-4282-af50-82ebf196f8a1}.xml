@@ -5,10 +5,10 @@
 			<value>Boar_footsteps</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{a08fb0e5-119e-4546-8321-e9764877459d}</destination>
+			<destination>{adaa759b-4132-48ed-9fb8-c0daf44508b7}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{8996fcc3-c2e3-4ec6-add3-750179b2e66e}</destination>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{47492d6a-2f78-4129-a43e-6633e183a698}">
+		<property name="volume">
+			<value>-7.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{a8055e7c-8171-4176-8887-9314509fac50}</destination>
 		</relationship>
@@ -124,6 +127,7 @@
 	<object class="MixerBusEffectChain" id="{a8055e7c-8171-4176-8887-9314509fac50}">
 		<relationship name="effects">
 			<destination>{9a16d90d-fdd7-4903-9cea-2a0bed622b98}</destination>
+			<destination>{9809a4e9-d998-4ffd-bb64-4bebb0b84e35}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6122a5b5-186a-4176-95a3-9c6b35d0278f}" />
@@ -176,5 +180,16 @@
 	</object>
 	<object class="MixerBusPanner" id="{da771a97-ff3f-4aa5-8d75-055b204ddcea}" />
 	<object class="MixerBusFader" id="{9a16d90d-fdd7-4903-9cea-2a0bed622b98}" />
+	<object class="SpatialiserEffect" id="{9809a4e9-d998-4ffd-bb64-4bebb0b84e35}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="userStereoSeparation">
+			<value>38</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{d167c2fa-a762-4eeb-985a-83bd360f2cf2}" />
 </objects>
