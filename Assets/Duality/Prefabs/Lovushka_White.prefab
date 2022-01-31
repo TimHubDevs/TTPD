@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7592156132249947515}
   - component: {fileID: 7592156132249947512}
   - component: {fileID: 7592156132249947513}
+  - component: {fileID: 8965875007918041825}
   m_Layer: 0
   m_Name: Lovushka_White
   m_TagString: Untagged
@@ -129,3 +130,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4057162, y: 2.1379895}
   m_EdgeRadius: 0
+--- !u!114 &8965875007918041825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7592156132249947511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988c7a940376324887e379b9d44a63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

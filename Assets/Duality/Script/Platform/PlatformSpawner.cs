@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour
@@ -8,11 +6,13 @@ public class PlatformSpawner : MonoBehaviour
     public Sprite[] tileVariants;
     public GameObject[] enemyPrefs;
     public GameObject platformPrefab, lastPlatformPrefab;
-    void Start()
+
+    private void Start()
     {
         SpawnPlatforms();
     }
-    public void SpawnPlatforms()
+
+    private void SpawnPlatforms()
     {
         for (int i = 0; i < 15; i++)
         {
@@ -25,28 +25,27 @@ public class PlatformSpawner : MonoBehaviour
                 {
                     toDelete[t] = i % 2 == 0 ? Random.Range(18 - 1, 18 - 8) : Random.Range(0, 7);
                 }
+
                 for (int t = 0; t < toSpawnBlack.Length; t++)
                 {
                     toSpawnBlack[t] = Random.Range(0, 18);
                 }
+
                 for (int t = 0; t < toSpawnWhite.Length; t++)
                 {
                     toSpawnWhite[t] = Random.Range(0, 18);
                 }
 
-                GameObject platform = Instantiate(platformPrefab, transform.position + new Vector3(-15, -i * 6, 0), Quaternion.identity);
+                GameObject platform = Instantiate(platformPrefab, transform.position + new Vector3(-15, -i * 6, 0),
+                    Quaternion.identity);
                 platform.transform.SetParent(transform);
-                platform.GetComponent<TiledPlatform>().SpawnTiles(tilePrefab, toDelete, tileVariants, enemyPrefs, toSpawnWhite, toSpawnBlack);
+                platform.GetComponent<TiledPlatform>().SpawnTiles(tilePrefab, toDelete, tileVariants, enemyPrefs,
+                    toSpawnWhite, toSpawnBlack);
             }
             else
             {
-               // GameObject lastPlatform = Instantiate(lastPlatformPrefab, transform.position + new Vector3(-15, -i * 6, 0), Quaternion.identity);
+                // GameObject lastPlatform = Instantiate(lastPlatformPrefab, transform.position + new Vector3(-15, -i * 6, 0), Quaternion.identity);
             }
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

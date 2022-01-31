@@ -277,9 +277,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4320840533a613040b504aa56a404baf, type: 3}
   - {fileID: 21300000, guid: 5de812ed28251bd4191e93fe7c189623, type: 3}
   - {fileID: 21300000, guid: f5f51644f0d963a43bccc60f11466fc3, type: 3}
-  enemyPrefs: []
   platformPrefab: {fileID: 648560192771231659, guid: 65999c41cbee9984f89a06cd8adbe86c, type: 3}
-  lastPlatformPrefab: {fileID: 0}
 --- !u!4 &931095177
 Transform:
   m_ObjectHideFlags: 0
@@ -543,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1399177597832116076, guid: 8adcea5ff3aa6b74bac3be2cef46fd73, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1399177597832116077, guid: 8adcea5ff3aa6b74bac3be2cef46fd73, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -671,6 +669,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7204629534399940245, guid: c3808695876725447a1ed179929ec8a2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3808695876725447a1ed179929ec8a2, type: 3}

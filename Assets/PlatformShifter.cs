@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformShifter : MonoBehaviour
@@ -17,11 +15,5 @@ public class PlatformShifter : MonoBehaviour
         {
             item.GetComponent<SpriteRenderer>().sprite = prefs[Random.Range(0, prefs.Length)];
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

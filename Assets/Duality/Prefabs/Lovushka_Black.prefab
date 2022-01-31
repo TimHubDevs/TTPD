@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2162649103473592241}
   - component: {fileID: 2162649103473592240}
   - component: {fileID: 2162649103473592207}
+  - component: {fileID: 5378247068701642498}
   m_Layer: 0
   m_Name: Lovushka_Black
   m_TagString: Untagged
@@ -129,3 +130,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4057162, y: 2.1379895}
   m_EdgeRadius: 0
+--- !u!114 &5378247068701642498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2162649103473592205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988c7a940376324887e379b9d44a63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

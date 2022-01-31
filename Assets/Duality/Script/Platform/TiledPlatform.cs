@@ -1,13 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TiledPlatform : MonoBehaviour
 {
-    void Start()
-    {
-    }
-
     public void SpawnTiles(GameObject tilePrefab, int[] tilesToDelete, Sprite[] tileVars, GameObject[] enemyPrefs,
         int[] tilesToSpawnWhite, int[] tilesToSpawnBlack)
     {
@@ -51,10 +45,5 @@ public class TiledPlatform : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

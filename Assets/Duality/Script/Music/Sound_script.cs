@@ -1,25 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Sound_script : MonoBehaviour
 {
-
-   
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void snd_explosion_idle()
-        // БОмба ловушка паук Idle
+        // Р‘РћРјР±Р° Р»РѕРІСѓС€РєР° РїР°СѓРє Idle
     {
         FMOD.Studio.EventInstance sndInstance1;
         sndInstance1 = FMODUnity.RuntimeManager.CreateInstance("event:/Explosive/Explosive_idle");
@@ -30,7 +14,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_explosion_bad()
-    // БОмба ловушка паук взрыв
+    // Р‘РћРјР±Р° Р»РѕРІСѓС€РєР° РїР°СѓРє РІР·СЂС‹РІ
     {
 
         FMOD.Studio.EventInstance sndInstance2;
@@ -41,7 +25,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_explosion_heal()
-    // БОмба ловушка паук лечение
+    // Р‘РћРјР±Р° Р»РѕРІСѓС€РєР° РїР°СѓРє Р»РµС‡РµРЅРёРµ
     {
 
         FMOD.Studio.EventInstance sndInstance3;
@@ -52,7 +36,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_explosion_die()
-    // БОмба ловушка паук смерть
+    // Р‘РћРјР±Р° Р»РѕРІСѓС€РєР° РїР°СѓРє СЃРјРµСЂС‚СЊ
     {
 
         FMOD.Studio.EventInstance sndInstance4;
@@ -63,7 +47,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_boar_idle()
-    // Кабан Idle
+    // РљР°Р±Р°РЅ Idle
     {
 
         FMOD.Studio.EventInstance sndInstance5;
@@ -74,7 +58,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_boar_footsteps()
-    // Кабан шаги
+    // РљР°Р±Р°РЅ С€Р°РіРё
     {
 
         FMOD.Studio.EventInstance sndInstance6;
@@ -87,7 +71,7 @@ public class Sound_script : MonoBehaviour
    
 
     void snd_boar_good()
-    // Кабан хорошее действее , дает рывок ?
+    // РљР°Р±Р°РЅ С…РѕСЂРѕС€РµРµ РґРµР№СЃС‚РІРµРµ , РґР°РµС‚ СЂС‹РІРѕРє ?
     {
 
         FMOD.Studio.EventInstance sndInstance8;
@@ -99,7 +83,7 @@ public class Sound_script : MonoBehaviour
 
 
     void snd_boar_die()
-    // Кабан хорошее действее , дает рывок ?
+    // РљР°Р±Р°РЅ С…РѕСЂРѕС€РµРµ РґРµР№СЃС‚РІРµРµ , РґР°РµС‚ СЂС‹РІРѕРє ?
     {
 
         FMOD.Studio.EventInstance sndInstance9;
@@ -111,7 +95,7 @@ public class Sound_script : MonoBehaviour
 
 
     void snd_trap_bad()
-    // ловушка дерево, наносит урон
+    // Р»РѕРІСѓС€РєР° РґРµСЂРµРІРѕ, РЅР°РЅРѕСЃРёС‚ СѓСЂРѕРЅ
     {
 
         FMOD.Studio.EventInstance sndInstance10;
@@ -122,7 +106,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_trap_good()
-    // ловушка дерево, даёт броню? позитивное действие
+    // Р»РѕРІСѓС€РєР° РґРµСЂРµРІРѕ, РґР°С‘С‚ Р±СЂРѕРЅСЋ? РїРѕР·РёС‚РёРІРЅРѕРµ РґРµР№СЃС‚РІРёРµ
     {
 
         FMOD.Studio.EventInstance sndInstance11;
@@ -133,7 +117,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_spring_bad_ground()
-    // ловушка попрыгун, приземление
+    // Р»РѕРІСѓС€РєР° РїРѕРїСЂС‹РіСѓРЅ, РїСЂРёР·РµРјР»РµРЅРёРµ
     {
 
         FMOD.Studio.EventInstance sndInstance12;
@@ -144,7 +128,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_spring_bad_start()
-    // ловушка попрыгун, начало прыжка
+    // Р»РѕРІСѓС€РєР° РїРѕРїСЂС‹РіСѓРЅ, РЅР°С‡Р°Р»Рѕ РїСЂС‹Р¶РєР°
     {
 
         FMOD.Studio.EventInstance sndInstance14;
@@ -155,7 +139,7 @@ public class Sound_script : MonoBehaviour
     }
 
     void snd_spring_good()
-    // ловушка попрыгун, позитивный звук
+    // Р»РѕРІСѓС€РєР° РїРѕРїСЂС‹РіСѓРЅ, РїРѕР·РёС‚РёРІРЅС‹Р№ Р·РІСѓРє
     {
 
         FMOD.Studio.EventInstance sndInstance15;

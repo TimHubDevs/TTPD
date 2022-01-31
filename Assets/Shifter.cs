@@ -1,32 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Shifter : MonoBehaviour
 {
-    public GameObject light, dark;
-    void Start()
-    {
-        
-    }
+    // [SerializeField] private GameObject _lightGO, _darkGO;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
-        {
-            light.SetActive(false);
-            dark.SetActive(true);
-            //Shift
-            if (STATIC.ISBLACK)
-                STATIC.ISBLACK = false;
-            else
-                STATIC.ISBLACK = true;
-            Destroy(gameObject);
-        }
+        if (!collision.CompareTag("Player")) return;
+        // _lightGO.SetActive(false);
+        // _darkGO.SetActive(true);
+        //Shift
+        STATIC.ISBLACK = !STATIC.ISBLACK;
+        Destroy(gameObject);
     }
 }
