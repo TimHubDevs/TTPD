@@ -52,11 +52,11 @@ TagManager:
   - name: Player
     uniqueID: 418201817
     locked: 0
-  - name: Enemy
-    uniqueID: 443766567
-    locked: 0
   - name: Palka
     uniqueID: 2495784707
+    locked: 0
+  - name: Enemy
+    uniqueID: 443766567
     locked: 0
   - name: Projectile
     uniqueID: 339562561

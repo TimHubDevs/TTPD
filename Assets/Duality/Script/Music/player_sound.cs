@@ -3,137 +3,106 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class player_sound : MonoBehaviour
+public class Player_sound : MonoBehaviour
 {
-
-
     FMOD.Studio.EventInstance fsInstance;
     FMOD.Studio.EventInstance jumpInstance;
 
-
-
-    
-
-  
-    void Update()
+    void snd_footsteps()
+        // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     {
-        
-    }
-
-    void snd_footsteps() 
-        // Звуки шагов
-    {
-
         fsInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Footsteps");
         fsInstance.start();
         fsInstance.release();
-
     }
 
     void snd_jump()
-        // Прыжок
+        // пїЅпїЅпїЅпїЅпїЅпїЅ
     {
-
         jumpInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/JumpUp");
         jumpInstance.start();
         jumpInstance.release();
-
     }
 
     void snd_jumpdwn()
-     // Приземление
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
-        
         FMOD.Studio.EventInstance jumpdwnInstance;
 
         jumpdwnInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/JumpDown");
         jumpdwnInstance.start();
         jumpdwnInstance.release();
-
     }
 
     void snd_punch()
-    // Замах
+        // пїЅпїЅпїЅпїЅпїЅ
     {
-
         FMOD.Studio.EventInstance punchInstance;
 
         punchInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Punch");
         punchInstance.start();
         punchInstance.release();
-
     }
 
     void snd_damage_taken()
-    // Получаемый урон
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     {
-
         FMOD.Studio.EventInstance damageInstance;
 
         damageInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Damage");
         damageInstance.start();
         damageInstance.release();
-
     }
 
 
     void snd_hide()
-    // приседание, укрылись =)
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ =)
     {
-
         FMOD.Studio.EventInstance hideInstance;
 
         hideInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Helmet_drop");
         hideInstance.start();
         hideInstance.release();
-
     }
 
     void snd_unhide()
-    // встали
-    // =)
+        // пїЅпїЅпїЅпїЅпїЅпїЅ
+        // =)
     {
-
         FMOD.Studio.EventInstance unhideInstance;
 
         unhideInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/unhide");
         unhideInstance.start();
         unhideInstance.release();
-
     }
-    void snd_character_die()
-    // Смерть главного персонажа
-    {
 
+    void snd_character_die()
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    {
         FMOD.Studio.EventInstance character_dieInstance;
 
         character_dieInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Die");
         character_dieInstance.start();
         character_dieInstance.release();
-
     }
 
     void snd_electric_bolt()
-    // запуск электрического снаряда
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
-
         FMOD.Studio.EventInstance ebInstance;
 
         ebInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Electric_bolt");
         ebInstance.start();
         ebInstance.release();
-
     }
 
     void snd_helmet_drop_die()
-    // шлем падает при смерти
+        // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     {
-
         FMOD.Studio.EventInstance hddieInstance;
 
         hddieInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Helmetdropdie");
         hddieInstance.start();
         hddieInstance.release();
-
     }
 }
