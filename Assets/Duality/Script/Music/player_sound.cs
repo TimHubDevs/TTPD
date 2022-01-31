@@ -124,4 +124,16 @@ public class player_sound : MonoBehaviour
         ebInstance.release();
 
     }
+
+    void snd_helmet_drop_die()
+    // шлем падает при смерти
+    {
+
+        FMOD.Studio.EventInstance hddieInstance;
+
+        hddieInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Helmetdropdie");
+        hddieInstance.start();
+        hddieInstance.release();
+
+    }
 }

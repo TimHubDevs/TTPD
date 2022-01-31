@@ -16,4 +16,9 @@ public class Projectile : MonoBehaviour
         var moveBy = 1 * _speed;
         rigidbody.velocity = new Vector2(moveBy, rigidbody.velocity.y);
     }
+
+    public void Setup()
+    {
+        // animator.SetBool("isJumping", true);
+    }
 }

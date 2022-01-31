@@ -56,11 +56,7 @@
 			<destination>{9350a8f8-9097-408a-899c-2379d615b0c2}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{cd3de3e6-d950-4582-b8eb-82045dc8bfec}">
-		<property name="maximumDistance">
-			<value>14</value>
-		</property>
-	</object>
+	<object class="EventAutomatableProperties" id="{cd3de3e6-d950-4582-b8eb-82045dc8bfec}" />
 	<object class="MarkerTrack" id="{bce701c0-9bb0-4b5c-9cb5-f242cf5c83d6}" />
 	<object class="GroupTrack" id="{f68114ca-f884-4446-a000-afe43f420337}">
 		<relationship name="modules">
@@ -163,9 +159,6 @@
 	<object class="SpatialiserEffect" id="{4615592d-b75a-4a55-b413-1f91495b4f0e}">
 		<property name="distanceRolloffType">
 			<value>1</value>
-		</property>
-		<property name="maximumDistance">
-			<value>14</value>
 		</property>
 		<property name="extentMode">
 			<value>1</value>

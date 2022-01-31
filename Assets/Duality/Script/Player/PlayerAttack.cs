@@ -19,5 +19,7 @@ public class PlayerAttack : MonoBehaviour
     public void AttackСLose()
     {
         _playerAnimation.AttackClose();
+        // var projectile = Instantiate(_projectilePrefab, Vector3.zero, Quaternion.identity, _rootProjectileSpawn);
+        // projectile.transform.localPosition = new Vector3(0.3f, 0f, 0f);
     }
 }
