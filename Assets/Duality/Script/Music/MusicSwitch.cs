@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Music_switch : MonoBehaviour
+public class MusicSwitch : MonoBehaviour
 {
     short musicsw = 1;
 

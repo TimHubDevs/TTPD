@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Player_sound : MonoBehaviour
+public class PlayerSound : MonoBehaviour
 {
     FMOD.Studio.EventInstance fsInstance;
     FMOD.Studio.EventInstance jumpInstance;
 
     void snd_footsteps()
-        // ����� �����
+        // ����� ����
     {
         fsInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Footsteps");
         fsInstance.start();

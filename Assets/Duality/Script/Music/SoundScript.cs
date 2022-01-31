@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Sound_script : MonoBehaviour
+public class SoundScript : MonoBehaviour
 {
     void snd_explosion_idle()
         // БОмба ловушка паук Idle
