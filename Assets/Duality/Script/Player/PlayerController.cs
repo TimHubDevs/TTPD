@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private PlayerAttack _playerAttack;
     [SerializeField] private PlayerAnimation _playerAnimation;
     [SerializeField] private Transform _isGroundedChecker;
@@ -16,16 +17,15 @@ public class PlayerController : MonoBehaviour
 
     private short _soundGround = 1;
     FMOD.Studio.EventInstance jumpdwnInstance;
-    private Rigidbody2D rb;
     private float _speed = 5f;
     private bool _isGrounded = false;
     private float _checkGroundRadius = 0.05f;
     private bool _isHiding = false;
     private bool _isReversedGrav;
+    private bool _isAttack;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         _isReversedGrav = false;
     }
 
@@ -61,16 +61,18 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1) && _isGrounded && !_isHiding)
         {
+            _isAttack = true;
             _playerAttack.AttackFar();
         }
 
         if (Input.GetMouseButtonDown(0) && _isGrounded && !_isHiding)
         {
+            _isAttack = true;
             _playerAttack.AttackСLose();
         }
     }
 
-    public void ChangeGravity()
+    private void ChangeGravity()
     {
         if (_isReversedGrav)
         {
@@ -102,7 +104,8 @@ public class PlayerController : MonoBehaviour
         }
 
         float moveBy = x * _speed;
-        rb.velocity = !_isHiding ? new Vector2(moveBy, rb.velocity.y) : Vector2.zero;
+        _rigidbody2D.velocity =
+            (!_isHiding && !_isAttack) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
     }
 
     private void Hide()
@@ -111,7 +114,7 @@ public class PlayerController : MonoBehaviour
         {
             _playerAnimation.Hide(true);
             _isHiding = true;
-            rb.velocity = Vector2.zero;
+            _rigidbody2D.velocity = Vector2.zero;
         }
         else if (Input.GetKeyDown(KeyCode.S) && _isHiding)
         {
@@ -133,40 +136,40 @@ public class PlayerController : MonoBehaviour
     private void Jump()
     {
         if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding) return;
-        rb.velocity = new Vector2(rb.velocity.x, _jumpForce);
+        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpForce);
         _playerAnimation.Jump(true);
     }
 
     private void BetterJump()
     {
-        if (rb.velocity.y < 0)
+        if (_rigidbody2D.velocity.y < 0)
         {
-            rb.velocity += Vector2.up * Physics2D.gravity * (_fallMultiplier - 1) * Time.deltaTime;
+            _rigidbody2D.velocity += Vector2.up * Physics2D.gravity * (_fallMultiplier - 1) * Time.deltaTime;
             _playerAnimation.Fall(true);
         }
-        else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        else if (_rigidbody2D.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
-            rb.velocity += Vector2.up * Physics2D.gravity * (_lowJumpMultiplier - 1) * Time.deltaTime;
+            _rigidbody2D.velocity += Vector2.up * Physics2D.gravity * (_lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
 
     private void JumpG()
     {
         if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding) return;
-        rb.velocity = new Vector2(rb.velocity.x, -_jumpForce);
+        _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, -_jumpForce);
         _playerAnimation.Jump(true);
     }
 
     private void BetterJumpG()
     {
-        if (rb.velocity.y > 0)
+        if (_rigidbody2D.velocity.y > 0)
         {
-            rb.velocity += Vector2.up * -Physics2D.gravity * (_fallMultiplier - 1) * Time.deltaTime;
+            _rigidbody2D.velocity += Vector2.up * -Physics2D.gravity * (_fallMultiplier - 1) * Time.deltaTime;
             _playerAnimation.Fall(true);
         }
-        else if (rb.velocity.y < 0 && !Input.GetKey(KeyCode.Space))
+        else if (_rigidbody2D.velocity.y < 0 && !Input.GetKey(KeyCode.Space))
         {
-            rb.velocity += Vector2.up * -Physics2D.gravity * (_lowJumpMultiplier - 1) * Time.deltaTime;
+            _rigidbody2D.velocity += Vector2.up * -Physics2D.gravity * (_lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
 
@@ -178,7 +181,6 @@ public class PlayerController : MonoBehaviour
             _isGrounded = true;
             _playerAnimation.Jump(false);
             _playerAnimation.Fall(false);
-            // Debug.Log("llala");
             while (_soundGround <= 1)
             {
                 jumpdwnInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Character/JumpDown");
@@ -193,5 +195,10 @@ public class PlayerController : MonoBehaviour
             _isGrounded = false;
             _soundGround = 1;
         }
+    }
+
+    public void SetAttackStateFalse()
+    {
+        _isAttack = false;
     }
 }
