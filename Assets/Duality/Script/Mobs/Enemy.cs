@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BombMob : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private float _damageAmount;
@@ -14,7 +14,6 @@ public class BombMob : MonoBehaviour
 
     private void Pain()
     {
-        //pain animation
         PainAnimation();
         HealthChecker();
     }
@@ -34,7 +33,7 @@ public class BombMob : MonoBehaviour
 
     private void Death()
     {
-        _animator.SetBool("isAttack", true);
+        _animator.SetTrigger("Death");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -42,8 +41,13 @@ public class BombMob : MonoBehaviour
         if (other.tag == "Player")
         {
             playerGO = other.gameObject;
-            Death();
+            Attack();
         }
+    }
+
+    private void Attack()
+    {
+        _animator.SetTrigger("Attack");
     }
 
     public void DealDamage()

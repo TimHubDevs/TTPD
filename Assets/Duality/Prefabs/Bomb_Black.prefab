@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 895462639073062199}
-  _damageAmount: 20
+  _damageAmount: 3
   _health: {fileID: 2331306478703869264}
 --- !u!114 &2331306478703869264
 MonoBehaviour:
@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce92af44bd478a4e97c3b3a857c60ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 100
-  _maxHealth: 100
+  _currentHealth: 5
+  _maxHealth: 5
 --- !u!1 &895462640462328285
 GameObject:
   m_ObjectHideFlags: 0
