@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5827102782905735510}
   m_Layer: 0
   m_Name: Kaban_Black
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 443766567
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -8296385383580801948, guid: 83cd0e993892b99498dc49e761c42b4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

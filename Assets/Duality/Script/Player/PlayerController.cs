@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     FMOD.Studio.EventInstance jumpdwnInstance;
     private float _speed = 5f;
     private bool _isGrounded = false;
-    private float _checkGroundRadius = 0.05f;
+    [SerializeField] private float _checkGroundRadius = 0.05f;
     private bool _isHiding = false;
     private bool _isReversedGrav;
     private bool _isAttack;
@@ -29,11 +29,15 @@ public class PlayerController : MonoBehaviour
     {
         _isReversedGrav = false;
     }
-
-
+    
     private void OnEnable()
     {
         _playerHealth.painEvent += Pain;
+    }
+    
+    private void OnDisable()
+    {
+        _playerHealth.painEvent -= Pain;
     }
 
     private void Update()
@@ -62,12 +66,17 @@ public class PlayerController : MonoBehaviour
 #endif
 
         Attack();
-        HealthChecker();
     }
 
     private void Pain()
     {
         _playerAnimation.Pain();
+        HealthChecker();
+    }
+    
+    private void Death()
+    {
+        _playerAnimation.Death();
     }
 
     private void HealthChecker()

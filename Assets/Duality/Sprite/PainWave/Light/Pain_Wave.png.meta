@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: a26f27fc5155cbb45b4ed4fd571059fa
+guid: 9e7daa6f9e8439646aeb8a997291999c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3240920212246675995
-    second: "\u0434\u044B\u043C\u043E\u043A_0"
+      213: 7938219222570124049
+    second: Pain_Wave_0
+  - first:
+      213: -231653353889162252
+    second: Pain_Wave_1
+  - first:
+      213: 7517022859527706632
+    second: Pain_Wave_2
+  - first:
+      213: -7338400208911577189
+    second: Pain_Wave_3
+  - first:
+      213: -2278982559350529616
+    second: Pain_Wave_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0434\u044B\u043C\u043E\u043A_0"
+      name: Pain_Wave_0
       rect:
         serializedVersion: 2
-        x: 1465
-        y: 85
-        width: 448
-        height: 415
+        x: 0
+        y: 0
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +132,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ed37a3fc30f503d0800000000000000
-      internalID: -3240920212246675995
+      spriteID: 113487e03583a2e60800000000000000
+      internalID: 7938219222570124049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pain_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb9862808009ccf0800000000000000
+      internalID: -231653353889162252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pain_Wave_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808d3aeb674d15860800000000000000
+      internalID: 7517022859527706632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pain_Wave_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f4c28f3e3c82a90800000000000000
+      internalID: -7338400208911577189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pain_Wave_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1e994df6d6f50e0800000000000000
+      internalID: -2278982559350529616
       vertices: []
       indices: 
       edges: []

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Spawned
   - Platform
+  - Enemy
+  - Palka
   layers:
   - Default
   - TransparentFX

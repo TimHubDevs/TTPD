@@ -19,10 +19,14 @@ public class Health : MonoBehaviour
     public void DecreaseHealth(float amount)
     {
         Debug.Log("Decrease hp");
-        painEvent.Invoke();
         if (_currentHealth - amount <= 0)
         {
             _currentHealth = 0;
         }
+        else
+        {
+            _currentHealth -= amount;
+        }
+        painEvent.Invoke();
     }
 }

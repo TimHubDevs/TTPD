@@ -146,6 +146,7 @@ MonoBehaviour:
   _animator: {fileID: 1399177597832116078}
   _rigidbodyProjectile: {fileID: 4616724507031321758}
   _speed: 0
+  _damageAmount: 25
 --- !u!50 &4616724507031321758
 Rigidbody2D:
   serializedVersion: 4
