@@ -97,7 +97,8 @@ GameObject:
   - component: {fileID: 8214493531449212692}
   - component: {fileID: 868682068257315868}
   - component: {fileID: 2517493885027150794}
-  - component: {fileID: 3790050558393715840}
+  - component: {fileID: 7585686536731014111}
+  - component: {fileID: 3103486955247712100}
   m_Layer: 0
   m_Name: Kaban_White
   m_TagString: Untagged
@@ -113,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4001713436360251028}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -3.1158376, y: 6.0471516, z: 0}
+  m_LocalPosition: {x: -2.94, y: 5.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 608393467964217503}
@@ -237,7 +238,37 @@ MonoBehaviour:
   isBlack: -1
   turn: 0
   dir: 1
---- !u!114 &3790050558393715840
+--- !u!114 &7585686536731014111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001713436360251028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 703617373
+      Data2: 1330917158
+      Data3: 1186466744
+      Data4: 1155853614
+    Path: event:/Mobs/Boar/Boar_bad
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &3103486955247712100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 523448196921813064}
   - component: {fileID: 4743200969517866258}
   - component: {fileID: 430199306697127807}
-  - component: {fileID: 5827102782905735510}
+  - component: {fileID: 3008006073069931944}
+  - component: {fileID: 960538159711114472}
   m_Layer: 0
   m_Name: Kaban_Black
   m_TagString: Enemy
@@ -153,7 +154,37 @@ MonoBehaviour:
   isBlack: 1
   turn: 0
   dir: 1
---- !u!114 &5827102782905735510
+--- !u!114 &3008006073069931944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085304577967427089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 703617373
+      Data2: 1330917158
+      Data3: 1186466744
+      Data4: 1155853614
+    Path: event:/Mobs/Boar/Boar_bad
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &960538159711114472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
