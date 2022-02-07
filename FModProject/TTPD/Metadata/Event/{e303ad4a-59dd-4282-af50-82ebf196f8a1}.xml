@@ -56,7 +56,11 @@
 			<destination>{9350a8f8-9097-408a-899c-2379d615b0c2}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{0596773a-90d8-49cd-858c-cc8b65317529}" />
+	<object class="EventAutomatableProperties" id="{0596773a-90d8-49cd-858c-cc8b65317529}">
+		<property name="maximumDistance">
+			<value>18</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{3442c090-e1e4-4024-97f4-9eca5fb4758a}" />
 	<object class="GroupTrack" id="{e69f5d88-b611-4380-8719-9383055ced2c}">
 		<relationship name="modules">
@@ -73,7 +77,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{47492d6a-2f78-4129-a43e-6633e183a698}">
 		<property name="volume">
-			<value>-7.5</value>
+			<value>-14.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{a8055e7c-8171-4176-8887-9314509fac50}</destination>
@@ -137,7 +141,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>3.5</value>
+			<value>7.5</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{9fff1f9b-34b5-45fe-a9c9-7e92020b14d3}">
@@ -183,6 +187,9 @@
 	<object class="SpatialiserEffect" id="{9809a4e9-d998-4ffd-bb64-4bebb0b84e35}">
 		<property name="distanceRolloffType">
 			<value>1</value>
+		</property>
+		<property name="maximumDistance">
+			<value>18</value>
 		</property>
 		<property name="extentMode">
 			<value>1</value>

@@ -57,7 +57,7 @@ MonoBehaviour:
   - {fileID: 8321248407227729355, guid: af9756f1be090924ea1703df5fb5fbfd, type: 3}
   - {fileID: 1085304577967427089, guid: e7859ed8929493d4e807e8330aeaa994, type: 3}
   - {fileID: 2162649103473592205, guid: 637b80098e36eed4d92ebfcfb64b7fb5, type: 3}
-  - {fileID: 6071867418251999679, guid: fac592c7cab9d1c4fa69ce6e4c720b80, type: 3}
   - {fileID: 8321248407227729355, guid: 8c8477efa61cb7c42898f5b996af3573, type: 3}
+  - {fileID: 895462639073062194, guid: 6c872ed64c8adf34c90de325bf405cd7, type: 3}
   platformPrefab: {fileID: 648560192771231659, guid: 65999c41cbee9984f89a06cd8adbe86c, type: 3}
   lastPlatformPrefab: {fileID: 5174267617113194497, guid: 7e5bc0c00f6be5240811ba44d26be51b, type: 3}

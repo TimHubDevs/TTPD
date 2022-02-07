@@ -4,7 +4,8 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private Rigidbody2D _rigidbodyProjectile;
-    [SerializeField] private float _speed = 0;
+    private float _speed = 0;
+    [SerializeField] private float _damageAmount = 25f;
 
     public void SetSpeed(float speed)
     {
@@ -17,8 +18,19 @@ public class Projectile : MonoBehaviour
         _rigidbodyProjectile.velocity = new Vector2(moveBy, _rigidbodyProjectile.velocity.y);
     }
 
-    public void Setup()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // animator.SetBool("isJumping", true);
+        if (other.tag == "Enemy")
+        {
+            Debug.Log("PAM");
+            other.gameObject.GetComponent<Health>().DecreaseHealth(_damageAmount);
+            _rigidbodyProjectile.gravityScale = 0;
+            _animator.SetTrigger("isBoom");
+        }
+    }
+
+    public void KillProjectile()
+    {
+        Destroy(gameObject);
     }
 }
