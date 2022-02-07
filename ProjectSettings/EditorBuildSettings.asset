@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Duality/Scenes/Game.unity
-    guid: ed33bc7bb0015634aab6a56e7beb3c0e
+    path: Assets/Duality/Scenes/StartMenuWindow.unity
+    guid: 118c8d974044a9943a98661a2e789232
+  - enabled: 1
+    path: Assets/Duality/Scenes/GameFixed.unity
+    guid: 2dded89b4ef114143bfa8e2bc48a0238
   m_configObjects: {}
