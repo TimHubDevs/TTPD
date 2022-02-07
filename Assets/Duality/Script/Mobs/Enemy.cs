@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
     private void Pain()
     {
         PainAnimation();
-        HealthChecker();
     }
 
     private void PainAnimation()
@@ -23,12 +22,16 @@ public class Enemy : MonoBehaviour
         _animator.SetTrigger("Pain");
     }
 
-    private void HealthChecker()
+    public void HealthCheck()
     {
-        if (_health._currentHealth == 0)
+        if (_health._currentHealth != 0) return;
+
+        if (gameObject.name == "Bomb_Black(Clone)")
         {
-            Death();
+            Attack();
         }
+
+        Death();
     }
 
     private void Death()
@@ -45,6 +48,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            playerGO = null;
+        }
+    }
+
     private void Attack()
     {
         _animator.SetTrigger("Attack");
@@ -53,11 +64,20 @@ public class Enemy : MonoBehaviour
     public void DealDamage()
     {
         if (playerGO == null) return;
+        if (playerGO.GetComponent<Health>()._currentHealth == 0) return;
         playerGO.GetComponent<Health>().DecreaseHealth(_damageAmount);
     }
 
     public void KillMob()
     {
         Destroy(gameObject);
+    }
+
+    public void CheckIsPlayerInCollider()
+    {
+        if (playerGO != null)
+        {
+            Attack();
+        }
     }
 }

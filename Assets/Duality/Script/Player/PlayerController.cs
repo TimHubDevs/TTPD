@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _bodyGO;
     [SerializeField] private GameObject _playerGO;
 
+    public bool _isDead;
+
     private short _soundGround = 1;
     FMOD.Studio.EventInstance jumpdwnInstance;
     private float _speed = 5f;
@@ -29,12 +31,12 @@ public class PlayerController : MonoBehaviour
     {
         _isReversedGrav = false;
     }
-    
+
     private void OnEnable()
     {
         _playerHealth.painEvent += Pain;
     }
-    
+
     private void OnDisable()
     {
         _playerHealth.painEvent -= Pain;
@@ -71,20 +73,18 @@ public class PlayerController : MonoBehaviour
     private void Pain()
     {
         _playerAnimation.Pain();
-        HealthChecker();
     }
-    
+
     private void Death()
     {
         _playerAnimation.Death();
     }
 
-    private void HealthChecker()
+    public void HealthCheck()
     {
-        if (_playerHealth._currentHealth == 0)
-        {
-            _playerAnimation.Death();
-        }
+        if (_playerHealth._currentHealth != 0) return;
+        Death();
+        _isDead = true;
     }
 
     private void Attack()
@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
 
         float moveBy = x * _speed;
         _rigidbody2D.velocity =
-            (!_isHiding && !_isAttack) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
+            (!_isHiding && !_isAttack && !_isDead) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
     }
 
     private void Hide()
@@ -165,7 +165,8 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding) return;
+        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding || _isDead) return;
+
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpForce);
         _playerAnimation.Jump(true);
     }
@@ -185,7 +186,7 @@ public class PlayerController : MonoBehaviour
 
     private void JumpG()
     {
-        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding) return;
+        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding || _isDead) return;
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, -_jumpForce);
         _playerAnimation.Jump(true);
     }
