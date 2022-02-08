@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Health _health;
     private GameObject playerGO;
 
+  
+
+
     private void OnEnable()
     {
         _health.painEvent += Pain;
