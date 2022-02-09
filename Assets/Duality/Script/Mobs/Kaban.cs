@@ -57,6 +57,4 @@ public class Kaban : MonoBehaviour
     {
         transform.position += new Vector3(dir * 4 * Time.deltaTime, 0, 0);
     }
-
-   
 }
