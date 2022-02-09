@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private float _damageAmount;
     [SerializeField] private Health _health;
-    private GameObject playerGO;
+    [HideInInspector] public GameObject playerGO;
 
     private void OnEnable()
     {
@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Attack()
+    public void Attack()
     {
         _animator.SetTrigger("Attack");
     }

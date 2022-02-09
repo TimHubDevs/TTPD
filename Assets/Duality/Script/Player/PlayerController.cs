@@ -32,8 +32,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-       
-        _isReversedGrav = false;
         if (STATIC.ISBLACK)
         {
             _isReversedGrav = true;
@@ -134,12 +132,8 @@ public class PlayerController : MonoBehaviour
         _playerAnimation.Move(x != 0);
         if (x != 0)
         {
-            if (_isReversedGrav)
-                _playerGO.transform.localScale = new Vector3(x * -1, 1, 1);
-            else
-            _playerGO.transform.localScale = new Vector3(x, 1, 1);
+            _playerGO.transform.localScale = _isReversedGrav ? new Vector3(x * -1, 1, 1) : new Vector3(x, 1, 1);
         }
-        
 
         float moveBy = x * _speed;
         _rigidbody2D.velocity =
