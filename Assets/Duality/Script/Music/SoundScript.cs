@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
-    void snd_explosion_idle()
+   public void snd_explosion_idle()
         // БОмба ловушка паук Idle
     {
         FMOD.Studio.EventInstance sndInstance1;
@@ -149,5 +149,15 @@ public class SoundScript : MonoBehaviour
         sndInstance15.release();
     }
 
+    void snd_electrichit()
+    // ловушка попрыгун, позитивный звук
+    {
+
+        FMOD.Studio.EventInstance sndInstance16;
+        sndInstance16 = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Hit_electric");
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(sndInstance16, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        sndInstance16.start();
+        sndInstance16.release();
+    }
 
 }
