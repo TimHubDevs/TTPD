@@ -13,7 +13,10 @@ public class PlayerAttack : MonoBehaviour
 
     public void CreateProjectile()
     {
-        var projectile = Instantiate(_projectilePrefab, new Vector3(_rootProjectilePosition.position.x +0.7f, _rootProjectilePosition.position.y, _rootProjectilePosition.position.z), Quaternion.identity);
+
+        var projectile = Instantiate(_projectilePrefab, new Vector3(_rootProjectilePosition.position.x +0.35f, _rootProjectilePosition.position.y, _rootProjectilePosition.position.z), Quaternion.identity);
+       //projectile.transform.Rotate(new Vector3())
+        Destroy(projectile, 2);    
     }
 
     public void AttackСLose()

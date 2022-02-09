@@ -14,7 +14,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _lowJumpMultiplier = 2f;
     [SerializeField] private GameObject _headGO;
     [SerializeField] private GameObject _bodyGO;
+    [SerializeField] private GameObject _armGO;
+    [SerializeField] private GameObject _palkaGO;
     [SerializeField] private GameObject _playerGO;
+
+    public bool _isDead;
 
     private short _soundGround = 1;
     FMOD.Studio.EventInstance jumpdwnInstance;
@@ -24,17 +28,21 @@ public class PlayerController : MonoBehaviour
     private bool _isHiding = false;
     private bool _isReversedGrav;
     private bool _isAttack;
+    public bool _isShifting;
 
     private void Start()
     {
-        _isReversedGrav = false;
+        if (STATIC.ISBLACK)
+        {
+            _isReversedGrav = true;
+        }
     }
-    
+
     private void OnEnable()
     {
         _playerHealth.painEvent += Pain;
     }
-    
+
     private void OnDisable()
     {
         _playerHealth.painEvent -= Pain;
@@ -42,6 +50,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (_isShifting)
+            return;
         Move();
         if (!_isReversedGrav)
         {
@@ -71,31 +81,29 @@ public class PlayerController : MonoBehaviour
     private void Pain()
     {
         _playerAnimation.Pain();
-        HealthChecker();
     }
-    
+
     private void Death()
     {
         _playerAnimation.Death();
     }
 
-    private void HealthChecker()
+    public void HealthCheck()
     {
-        if (_playerHealth._currentHealth == 0)
-        {
-            _playerAnimation.Death();
-        }
+        if (_playerHealth._currentHealth != 0) return;
+        Death();
+        _isDead = true;
     }
 
     private void Attack()
     {
-        if (Input.GetMouseButtonDown(1) && _isGrounded && !_isHiding)
+        if (Input.GetMouseButtonDown(1)  && !_isHiding && _isGrounded && !_isAttack)
         {
             _isAttack = true;
             _playerAttack.AttackFar();
         }
 
-        if (Input.GetMouseButtonDown(0) && _isGrounded && !_isHiding)
+        if (Input.GetMouseButtonDown(0)  && !_isHiding && _isGrounded && !_isAttack)
         {
             _isAttack = true;
             _playerAttack.AttackСLose();
@@ -113,7 +121,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             _isReversedGrav = true;
-            GetComponent<Rigidbody2D>().gravityScale *= -1;
+            transform.GetComponentInParent<Rigidbody2D>().gravityScale *= -1;
             _playerGO.transform.Rotate(new Vector3(0, 180, 180));
         }
     }
@@ -122,25 +130,19 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         _playerAnimation.Move(x != 0);
-        if (x < 0)
+        if (x != 0)
         {
-            _headGO.GetComponent<SpriteRenderer>().flipX = false;
-            _bodyGO.GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else if (x > 0)
-        {
-            _headGO.GetComponent<SpriteRenderer>().flipX = true;
-            _bodyGO.GetComponent<SpriteRenderer>().flipX = false;
+            _playerGO.transform.localScale = _isReversedGrav ? new Vector3(x * -1, 1, 1) : new Vector3(x, 1, 1);
         }
 
         float moveBy = x * _speed;
         _rigidbody2D.velocity =
-            (!_isHiding && !_isAttack) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
+            (!_isHiding && !_isAttack && !_isDead) ? new Vector2(moveBy, _rigidbody2D.velocity.y) : Vector2.zero;
     }
 
     private void Hide()
     {
-        if (Input.GetKeyDown(KeyCode.S) && !_isHiding && _isGrounded)
+        if (Input.GetKeyDown(KeyCode.S) && !_isHiding && _isGrounded&&!_isAttack)
         {
             _playerAnimation.Hide(true);
             _isHiding = true;
@@ -165,7 +167,8 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding) return;
+        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding || _isDead || _isAttack) return;
+
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _jumpForce);
         _playerAnimation.Jump(true);
     }
@@ -185,7 +188,7 @@ public class PlayerController : MonoBehaviour
 
     private void JumpG()
     {
-        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding) return;
+        if (!Input.GetKey(KeyCode.Space) || !_isGrounded || _isHiding || _isDead || _isAttack) return;
         _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, -_jumpForce);
         _playerAnimation.Jump(true);
     }

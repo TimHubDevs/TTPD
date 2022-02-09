@@ -8,8 +8,15 @@ public class StaffAttacker : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Debug.Log("POOF");
-            if (other == null) return;
+            Debug.Log("CloseAttackOnEnemy");
+            if (other.gameObject.GetComponent<Health>() == null)
+            {
+                Debug.LogError($"This {other.gameObject.name} doesn't have Health script!");
+                return;
+            }
+
+            if (other.gameObject.GetComponent<Health>()._currentHealth == 0) return;
+
             other.gameObject.GetComponent<Health>().DecreaseHealth(_damageAmount);
         }
     }
