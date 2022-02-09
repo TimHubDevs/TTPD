@@ -20,15 +20,9 @@ public class Snake : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, _player.transform.position);
         bool tooClose = distance < _range && _player.transform.position.y - transform.position.y < 1;
-        if (transform.position.x == _player.transform.position.x)
-        {
-            Debug.Log("Zopa!");
-            return;
-        }
-
+        
         if (tooClose)
         {
-            Debug.Log($"Player in radius");
             _enemy.Attack();
             if (_enemy.playerGO != null)
             {
@@ -40,12 +34,10 @@ public class Snake : MonoBehaviour
             _rigidbody2D.velocity = relativePoint.x < 0.0
                 ? new Vector2(-1 * _speed, _rigidbody2D.velocity.y)
                 : new Vector2(1 * _speed, _rigidbody2D.velocity.y);
-            Debug.Log($"Player in radius + {relativePoint.x}");
         }
         else
         {
             _rigidbody2D.velocity = Vector2.zero;
-            Debug.Log("Player not in radius");
         }
     }
 
