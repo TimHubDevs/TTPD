@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private bool _isHiding = false;
     private bool _isReversedGrav;
     private bool _isAttack;
+    public bool _isShifting;
 
     private void Start()
     {
@@ -49,6 +50,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (_isShifting)
+            return;
         Move();
         if (!_isReversedGrav)
         {
